@@ -1,0 +1,104 @@
+:root {
+    --darkMainBG: #212124;
+    --darkMainTxt: #e4e6ea;
+}
+
+body {
+    transition: .5s;
+}
+
+body.dark {
+    background-color: var(--darkMainBG);
+    transition: .5s;
+}
+
+body.dark #header {
+    background-color: var(--darkMainBG);
+    transition: .5s;
+}
+
+body.dark #cartbox {
+    background-color: var(--darkMainBG);
+}
+
+body.dark #cartbox .item {
+    color: var(--darkMainTxt);
+    background-color: unset;
+}
+
+body.dark #cartbox .checkout {
+    color: var(--darkMainTxt);
+    background-color: unset;
+}
+
+body.dark #cartbox .checkout .total h3 {
+    color: var(--darkMainTxt);
+}
+
+@media (max-width:767px) {
+    body.dark nav .nav {
+        background-color: var(--darkMainBG);
+    }
+}
+
+body.dark #features .container>div {
+    background-color: #e2bc791a;
+}
+
+body.dark #features .container>div:hover {
+    background-color: #e2bc7973;
+}
+
+body.dark h3.section-title {
+    color: var(--darkMainTxt);
+}
+
+body.dark #gallery .items .item::before {
+    border-color: var(--darkMainBG);
+}
+
+body.dark #values .item .text p {
+    color: var(--mainColor);
+}
+
+body.dark #values .item .title .icon {
+    color: var(--darkMainTxt);
+}
+
+body.dark #values .item .text h3 {
+    color: var(--darkMainTxt);
+}
+
+body.dark #gallery .categories {
+    color: var(--darkMainTxt);
+}
+
+body.dark #gallery .categories li {
+    border-color: var(--darkMainTxt);
+}
+
+body.dark #gallery .categories li.active,
+body.dark #gallery .categories li:hover {
+    border-color: var(--mainColor);
+}
+
+body.dark #cartbox .checkout button {
+    background-color: var(--darkMainTxt);
+    color: var(--darkMainBG);
+}
+
+body.dark #cartbox .checkout button:hover {
+    background-color: var(--mainColor)
+}
+
+body.dark #landing .slider {
+    color: var(--darkMainBG);
+}
+
+body.dark footer .top {
+    background-color: var(--darkMainBG);
+}
+
+body.dark #header {
+    background-color: var(--darkMainBG);
+}

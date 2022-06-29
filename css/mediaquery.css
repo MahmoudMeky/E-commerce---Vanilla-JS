@@ -1,0 +1,189 @@
+    /* Containers */
+    
+    .container {
+        padding: 0 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Small Screen */
+    
+    @media (min-width:768px) {
+        .container {
+            width: 750px;
+        }
+    }
+    /* Medium Screen */
+    
+    @media (min-width:992px) {
+        .container {
+            width: 970px;
+        }
+    }
+    /* Large Screen */
+    
+    @media (min-width:1200px) {
+        .container {
+            width: 1170px;
+        }
+    }
+    /* ---------------- */
+    /* Start Nav Bar  */
+    /* Mobile - Responsive */
+    
+    @media(max-width:767px) {
+        #header {
+            /* background-color: #eee; */
+        }
+        nav {
+            flex-direction: row-reverse;
+            /* position: relative; */
+            gap: unset;
+        }
+        nav .mobile-nav {
+            display: block;
+            cursor: pointer;
+        }
+        nav .nav {
+            position: absolute;
+            right: 0;
+            top: 80px;
+            flex-direction: column;
+            gap: 0;
+            justify-content: center;
+            /* align-items: flex-end; */
+            background-color: white;
+            width: 100%;
+            padding: 20px;
+            display: none;
+            z-index: 2;
+        }
+        nav .nav .arrow {
+            content: "";
+            position: absolute;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent var(--PopUpsColor) transparent;
+            width: fit-content;
+            top: -19px;
+            right: 0px;
+        }
+        nav .nav a {
+            height: 50px;
+        }
+        nav .nav a::after {
+            bottom: 0;
+        }
+        nav .mobile-nav:hover+.nav {
+            /* display: block; */
+        }
+        nav li {
+            position: unset;
+        }
+        #cartbox {
+            top: 80px;
+            background-color: #eee;
+            width: 80%;
+            left: 50px;
+            position: absolute;
+        }
+        /* #cartbox .arrow {
+            top: -31px;
+        } */
+    }
+    /* End Nav Bar */
+    /* Start Landing Page */
+    
+    @media (min-width:768px) {
+        #landing .cloud {
+            height: 65%;
+            left: 10px;
+        }
+        #landing .cloud span {
+            font-size: 35px;
+        }
+    }
+    /* Medium Screen */
+    
+    @media (min-width:992px) {
+        #landing .cloud {
+            height: 85%;
+            left: 10px;
+        }
+        #landing .cloud span {
+            font-size: 50px;
+        }
+    }
+    
+    @media(max-width:767px) {
+        #landing .container {
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        #landing .cloud {
+            width: 100%;
+            position: unset;
+            background-image: none;
+            height: unset;
+        }
+        #landing .pic {
+            width: 100%;
+            height: 100%;
+        }
+        #landing .cloud span {
+            width: 100%;
+            font-size: 50px;
+        }
+    }
+    /* End Landing Page */
+    /* Start Values Part */
+    
+    @media(max-width:767px) {
+        #values .items {
+            gap: 15px;
+        }
+        #values .item {
+            align-items: center;
+        }
+        #values .item .title {
+            flex-direction: column;
+            gap: 5px;
+        }
+        #values .item .text p {
+            text-align: center;
+        }
+        #values .item .desc {
+            text-align: center;
+        }
+    }
+    /* End Values Part */
+    /* Start Gallery Part */
+    
+    @media(max-width:767px) {
+        #gallery .categories li {
+            min-width: 150px;
+            text-align: center;
+        }
+        #gallery .categories {
+            flex-wrap: wrap;
+        }
+    }
+    /* End Gallery Part */
+    /* Start Footer Part */
+    
+    @media(max-width:767px) {
+        footer .bottom {
+            text-align: center;
+        }
+        footer .top {
+            min-height: 320px;
+        }
+    }
+    
+    @media(max-width:767px) {
+        #scroll-to-top {
+            right: 15px;
+        }
+    }
+    /* End Footer Part */
